@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
- <display>
- 	<category name="category.chapter01.helloWorld">
- 		<portlet id="HelloWorldPortlet" />
- 	</category>
- </display>
