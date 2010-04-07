@@ -7,9 +7,7 @@ in {TOMCAT_HOME}/webapps/ROOT/WEB-INF/classes directory and define the
 database properties as shown here:
 
 jdbc.default.driverClassName=com.mysql.jdbc.Driver                       
-jdbc.default.url=jdbc:mysql://localhost/myportaldb                       
-[CA]?useUnicode=true&                                                    
-[CA]characterEncoding=UTF-8&useFastDateParsing=false                     
+jdbc.default.url=jdbc:mysql://localhost/myportaldb?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
 jdbc.default.username=root                                               
 jdbc.default.password=<password>
 
@@ -30,8 +28,7 @@ configuration in Eclipse.
      type="javax.sql.DataSource" 
      username="root" password="root"
      driverClassName="com.mysql.jdbc.Driver" 
-     factory="org.apache.commons.dbcp.                                   
-      [CA]BasicDataSourceFactory"                                        
+     factory="org.apache.commons.dbcp.BasicDataSourceFactory"                                        
      url="jdbc:mysql://localhost/myportaldb?useUnicode=true&amp;"
      maxActive="5"                                                       
      maxIdle="2"/>                                                      
