@@ -14,6 +14,7 @@
 		<td>&nbsp; <i><b><c:out value="${requestScope.lastName}" /></b></i></td>
 	</tr>
 </table>
+<br/>
 <table align="left">
 	<tr>
 		<td><a class="anchor" href="${printModeUrl}"><b>&nbsp;<fmt:message
@@ -29,6 +30,7 @@
 		</b></td>
 	</tr>
 </table>
+<br/>
 <table align="right">
 	<tr>
 		<td><a class="anchor" href="${fullScreenUrl}"><b><fmt:message
@@ -36,6 +38,7 @@
 	</tr>
 </table>
 <form name="searchForm" method="post" action="${searchBookActionUrl}">
+<br/>
 <table border="0" align="left">
 	<tr>
 		<td><b><fmt:message key="label.book.name" /></b></td>
@@ -52,6 +55,7 @@
 </table>
 </form>
 <form name="catalogForm" method="post" action="${addBookFormUrl}">
+<br/>
 <table align="right">
 	<tr>
 		<td><a class="anchor" href="${refreshResultsUrl}"><b>&lt; <fmt:message
