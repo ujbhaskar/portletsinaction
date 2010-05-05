@@ -94,7 +94,7 @@
 	</tr>
 </table>
 <c:if test="${not empty books}">
-	<table border="1">
+	<table border="1" width="100%">
 		<tr bgcolor="#99CCFF">
 			<td valign="top"><b><fmt:message key="label.category" /></b></td>
 			<td valign="top"><b><fmt:message key="label.name" /></b></td>
