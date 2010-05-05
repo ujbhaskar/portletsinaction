@@ -29,6 +29,7 @@
 		<td>&nbsp; <i><b><c:out value="${requestScope.lastName}" /></b></i></td>
 	</tr>
 </table>
+<br/>
 <table align="left">
 	<tr>
 		<td><a class="anchor" href="<%= printModeUrl%>"><b>&nbsp;<fmt:message
@@ -46,6 +47,7 @@
 		</c:if></a> </b></td>
 	</tr>
 </table>
+<br/>
 <table align="right">
 	<tr>
 		<td><a class="anchor" href="<%=fullScreenUrl%>"><b><fmt:message
@@ -54,6 +56,7 @@
 </table>
 <form name="<portlet:namespace/>searchForm" method="post"
 	action='<portlet:actionURL name="searchBookAction"/>'>
+<br/>
 <table border="0" align="left">
 	<tr>
 		<td><b><fmt:message key="label.book.name" /></b></td>
@@ -74,6 +77,7 @@
           <portlet:param name="<%=Constants.MYACTION_PARAM%>" value="addBookForm"/> 
     </portlet:renderURL>' 
 > 
+<br/>
 <table align="right">
 	<tr>
 		<td><a class="anchor" href='<portlet:renderURL>
