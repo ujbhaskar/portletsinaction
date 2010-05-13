@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 5.2.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_5_2_0.dtd">
+
+<liferay-portlet-app>
+	<portlet>
+		<portlet-name>bookCatalog</portlet-name>
+		<instanceable>true</instanceable>
+		<header-portlet-css>/css/bookCatalog.css</header-portlet-css>
+		<header-portlet-css>/js/dijit/themes/soria/soria.css</header-portlet-css>
+		<header-portlet-javascript>/js/bookCatalog.js</header-portlet-javascript>
+		<header-portlet-javascript>/js/dojo/dojo.js</header-portlet-javascript>
+		<header-portlet-javascript>/dwr/engine.js</header-portlet-javascript>
+		<header-portlet-javascript>/dwr/util.js</header-portlet-javascript>
+		<header-portlet-javascript>/dwr/interface/MyAjaxBean.js</header-portlet-javascript>
+	</portlet>
+</liferay-portlet-app>
