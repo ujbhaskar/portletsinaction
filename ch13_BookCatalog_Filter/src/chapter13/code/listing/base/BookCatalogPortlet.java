@@ -1,4 +1,4 @@
-package chapter11.code.listing.base;
+package chapter13.code.listing.base;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -35,11 +35,11 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import org.w3c.dom.Element;
 
-import chapter11.code.listing.domain.Book;
-import chapter11.code.listing.events.BookAddedEvent;
-import chapter11.code.listing.service.BookService;
-import chapter11.code.listing.service.BookServiceImpl;
-import chapter11.code.listing.utils.Constants;
+import chapter13.code.listing.domain.Book;
+import chapter13.code.listing.events.BookAddedEvent;
+import chapter13.code.listing.service.BookService;
+import chapter13.code.listing.service.BookServiceImpl;
+import chapter13.code.listing.utils.Constants;
 
 /**
  * BookCatalogPortlet class represents the portlet class responsible for

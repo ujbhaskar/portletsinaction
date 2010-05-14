@@ -1,9 +1,9 @@
-package chapter11.code.listing.servlet.listener;
+package chapter13.code.listing.servlet.listener;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
-import chapter11.code.listing.utils.BookDataObject;
+import chapter13.code.listing.utils.BookDataObject;
 
 public class BookCatalogContextListener implements ServletContextListener {
 

@@ -1,4 +1,4 @@
-package chapter11.code.listing.service;
+package chapter13.code.listing.service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,9 +6,9 @@ import java.util.List;
 
 import javax.portlet.PortletContext;
 
-import chapter11.code.listing.domain.Book;
-import chapter11.code.listing.utils.BookDataObject;
-import chapter11.code.listing.utils.Constants;
+import chapter13.code.listing.domain.Book;
+import chapter13.code.listing.utils.BookDataObject;
+import chapter13.code.listing.utils.Constants;
 
 public class BookServiceImpl implements BookService {
 	private PortletContext context;

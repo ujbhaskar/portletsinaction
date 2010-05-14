@@ -1,4 +1,4 @@
-package chapter11.code.listing.base;
+package chapter13.code.listing.base;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import javax.portlet.PortletPreferences;
 import javax.portlet.PreferencesValidator;
 import javax.portlet.ValidatorException;
 
-import chapter11.code.listing.service.BookService;
+import chapter13.code.listing.service.BookService;
 
 public class BookCatalogPrefsValidator implements PreferencesValidator {
 

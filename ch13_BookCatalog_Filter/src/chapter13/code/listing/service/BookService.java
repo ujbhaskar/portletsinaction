@@ -1,8 +1,8 @@
-package chapter11.code.listing.service;
+package chapter13.code.listing.service;
 
 import java.util.List;
 
-import chapter11.code.listing.domain.Book;
+import chapter13.code.listing.domain.Book;
 
 public interface BookService {
 	List<Book> getBooks();
