@@ -33,6 +33,13 @@
 					<include>Language-ext.properties</include>
 				</includes>
 			</resource>
+			<resource>
+				<targetPath>${project.basedir}/target/classes</targetPath>
+				<directory>${project.basedir}/src</directory>
+				<includes>
+					<include>*.properties</include>
+				</includes>
+			</resource>
 		</resources>
 		<pluginManagement>
 			<plugins>
