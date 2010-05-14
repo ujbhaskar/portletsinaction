@@ -3,7 +3,7 @@
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>portlets-in-action</groupId>
-	<artifactId>ch06_BookCatalog</artifactId>
+	<artifactId>ch12_BookCatalogDirectLinks</artifactId>
 	<packaging>war</packaging>
 	<version>1.0</version>
 	<build>
@@ -41,6 +41,14 @@
 							<resource>
 								<directory>js</directory>
 								<targetPath>js</targetPath>
+							</resource>
+							<resource>
+								<directory>images</directory>
+								<targetPath>images</targetPath>
+							</resource>
+							<resource>
+								<directory>toc</directory>
+								<targetPath>toc</targetPath>
 							</resource>
 							<resource>
 								<directory>images</directory>
