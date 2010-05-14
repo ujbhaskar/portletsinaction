@@ -12,7 +12,7 @@
 		</supports>
 		<resource-bundle>content.Language-ext</resource-bundle>
 		<portlet-info>
-			<title>Date/Time Portlet</title>
+			<title>Date/Time Portlet - Secured Resource</title>
 		</portlet-info>
 		<security-role-ref>
 			<role-name>portalUser</role-name>
