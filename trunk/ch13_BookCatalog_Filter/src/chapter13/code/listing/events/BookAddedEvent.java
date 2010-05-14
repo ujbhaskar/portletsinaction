@@ -1,10 +1,10 @@
-package chapter11.code.listing.events;
+package chapter13.code.listing.events;
 
 import java.io.Serializable;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import chapter11.code.listing.domain.Book;
+import chapter13.code.listing.domain.Book;
 
 @XmlRootElement
 public class BookAddedEvent implements Serializable {

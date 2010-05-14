@@ -1,7 +1,7 @@
 <%@ taglib prefix="portlet" uri="http://java.sun.com/portlet_2_0"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<%@ page contentType="text/html" isELIgnored="false" import="chapter11.code.listing.utils.Constants"%>
+<%@ page contentType="text/html" isELIgnored="false" import="chapter13.code.listing.utils.Constants"%>
 
 <portlet:defineObjects/>
 

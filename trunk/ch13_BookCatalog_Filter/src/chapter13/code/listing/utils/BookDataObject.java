@@ -1,10 +1,10 @@
-package chapter11.code.listing.utils;
+package chapter13.code.listing.utils;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import chapter11.code.listing.domain.Book;
+import chapter13.code.listing.domain.Book;
 
 public class BookDataObject {
 	private List<Book> books = Collections.synchronizedList(new ArrayList<Book>());

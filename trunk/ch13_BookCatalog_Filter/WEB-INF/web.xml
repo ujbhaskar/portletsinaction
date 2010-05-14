@@ -5,6 +5,6 @@
       xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
 	<display-name>Book Catalog</display-name>
 	<listener>
-		<listener-class>chapter11.code.listing.servlet.listener.BookCatalogContextListener</listener-class>
+		<listener-class>chapter13.code.listing.servlet.listener.BookCatalogContextListener</listener-class>
 	</listener>
 </web-app>

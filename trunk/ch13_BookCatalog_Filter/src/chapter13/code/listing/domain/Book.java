@@ -1,4 +1,4 @@
-package chapter11.code.listing.domain;
+package chapter13.code.listing.domain;
 
 import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name="book")

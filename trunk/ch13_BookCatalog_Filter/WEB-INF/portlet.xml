@@ -7,7 +7,7 @@
 	<portlet>
 		<portlet-name>bookCatalog</portlet-name>
 		<portlet-class>
-			chapter11.code.listing.base.BookCatalogPortlet
+			chapter13.code.listing.base.BookCatalogPortlet
 		</portlet-class>
 		<init-param>
 			<name>uploadFolder</name>
@@ -39,7 +39,7 @@
 				<read-only>true</read-only>
 			</preference>
 			<preferences-validator>
-				chapter11.code.listing.base.BookCatalogPrefsValidator
+				chapter13.code.listing.base.BookCatalogPrefsValidator
 			</preferences-validator>
 		</portlet-preferences>
 		<supported-publishing-event>
@@ -62,7 +62,7 @@
 	</user-attribute>
 	<filter>
 		<filter-name>hyperlinkFilter</filter-name>
-		<filter-class>chapter11.code.listing.filters.HyperlinkFilter</filter-class>
+		<filter-class>chapter13.code.listing.filters.HyperlinkFilter</filter-class>
 		<lifecycle>RENDER_PHASE</lifecycle>
 		<init-param>
 			<name>AspectJ</name>
@@ -87,13 +87,13 @@
 	</filter>
 	<filter>
 		<filter-name>utilityFilter</filter-name>
-		<filter-class>chapter11.code.listing.filters.UtilityFilter</filter-class>
+		<filter-class>chapter13.code.listing.filters.UtilityFilter</filter-class>
 		<lifecycle>ACTION_PHASE</lifecycle>
 		<lifecycle>RENDER_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>titleFilter</filter-name>
-		<filter-class>chapter11.code.listing.filters.PortletTitleFilter</filter-class>
+		<filter-class>chapter13.code.listing.filters.PortletTitleFilter</filter-class>
 		<lifecycle>RENDER_PHASE</lifecycle>
 		<init-param>
 			<name>reqParamName</name>
@@ -115,7 +115,7 @@
 
 	<event-definition>
 		<qname xmlns:n="http://www.mynamespace.com">n:bookAddedEvent</qname>
-		<value-type>chapter11.code.listing.events.BookAddedEvent</value-type>
+		<value-type>chapter13.code.listing.events.BookAddedEvent</value-type>
 	</event-definition>
 	<container-runtime-option>
 		<name>javax.portlet.actionScopedRequestAttributes</name>

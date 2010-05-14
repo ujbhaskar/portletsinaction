@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ page contentType="text/html" isELIgnored="false"
-	import="javax.portlet.*,chapter11.code.listing.utils.Constants"%>
+	import="javax.portlet.*,chapter13.code.listing.utils.Constants"%>
 
 <script type='text/javascript'>
   function <portlet:namespace/>confirmRemove() {
