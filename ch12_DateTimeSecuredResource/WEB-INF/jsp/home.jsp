@@ -9,7 +9,6 @@
 				messageText.innerHTML = xhr.responseText;
 			}
 		};
-		//-- added fake id because of caching issue in IE 8
 		var url = "<%=request.getAttribute("dateTimeResourceURL")%>" + "?fakeId=" + Math.random();
 		xhr.open("GET", url, true);
 		xhr.send();
