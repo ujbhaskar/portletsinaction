@@ -194,7 +194,7 @@ public class BookCatalogPortlet extends GenericPortlet {
 							+ "addBookForm.jsp")).include(request, response);
 		}
 		if ("downloadToC".equalsIgnoreCase(resourceID)) {
-			File file = new File(props.getProperty("uploadFolder") + "/"
+			File file = new File(props.getProperty("uploadFolder") + File.separator
 					+ request.getParameter("fileName"));
 			OutputStream outStream = response.getPortletOutputStream();
 			if (!file.exists() || !file.canRead()) {
