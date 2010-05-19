@@ -302,7 +302,7 @@ public class BookCatalogPortlet extends GenericPortlet {
 	 */
 	public void serveResource(ResourceRequest request, ResourceResponse response)
 			throws IOException, PortletException {
-		File file = new File(getInitParameter("uploadFolder") + "/"
+		File file = new File(getInitParameter("uploadFolder") + File.separator
 				+ request.getResourceID());
 		OutputStream outStream = response.getPortletOutputStream();
 		if (!file.exists() || !file.canRead()) {
