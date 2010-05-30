@@ -13,14 +13,14 @@
   </tr>
   <tr>
   	<td><fmt:message key="label.firstName"/></td>
-  	<td><input type="text" name="firstName" value="${requestScope.firstName}"></input></td>
+  	<td><input type="text" name="firstName" value="${requestScope.user.firstName}"></input></td>
   </tr>
   <tr>
   	<td>&nbsp;</td>
   </tr>
   <tr>
   	<td><fmt:message key="label.lastName"/></td>
-  	<td><input type="text" name="lastName" value="${requestScope.lastName}"></input></td>
+  	<td><input type="text" name="lastName" value="${requestScope.user.lastName}"></input></td>
   </tr>
   <tr>
   	<td>&nbsp;</td>
