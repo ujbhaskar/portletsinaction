@@ -92,7 +92,7 @@ public class UserRegistrationPortlet extends GenericPortlet {
 		String email = request.getParameter("email");
 		// --set the information entered by the user on the registration
 		// --form as request attribute.
-		// -- NOTE : You can transfer complex objects
+		// -- NOTE : You can't transfer complex objects
 		// -- from action request to render request using setRenderParameter
 		//-- method
 		request.setAttribute("user", new User(
