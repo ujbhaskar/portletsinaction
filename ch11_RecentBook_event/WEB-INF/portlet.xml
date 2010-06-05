@@ -27,6 +27,6 @@
 	<default-namespace>http://www.mynamespace.com</default-namespace>
 	<event-definition>
 		<qname xmlns:n="http://www.mynamespace.com">n:bookAddedEvent</qname>
-		<value-type>chapter11.code.listing.events.BookAddedEventAbstract</value-type>
+		<value-type>chapter11.code.listing.events.BookAddedEvent</value-type>
 	</event-definition>
 </portlet-app>
