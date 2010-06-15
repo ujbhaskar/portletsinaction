@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jaxb-api-2.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jsf-api-2.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jsf-impl-2.0.3-b01.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/log4j.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/portletfaces-bridge-api-2.0.0.ALPHA2-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/portletfaces-bridge-impl-2.0.0.ALPHA2-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/slf4j-log4j12.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/el-api.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
