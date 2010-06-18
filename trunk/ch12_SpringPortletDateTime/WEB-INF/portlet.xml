@@ -12,7 +12,7 @@
 		</supports>
 		<resource-bundle>content.Language-ext</resource-bundle>
 		<portlet-info>
-			<title>Date/Time Portlet</title>
+			<title>Spring Portlet MVC Date/Time Portlet</title>
 		</portlet-info>
 	</portlet>
 </portlet-app>
