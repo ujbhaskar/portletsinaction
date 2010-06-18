@@ -5,10 +5,11 @@
 	<portlet>
 		<portlet-name>bookCatalog</portlet-name>
 		<instanceable>true</instanceable>
+		<ajaxable>false</ajaxable>
 		<header-portlet-css>/css/bookCatalog.css</header-portlet-css>
 		<header-portlet-css>/js/dijit/themes/soria/soria.css</header-portlet-css>
-		<header-portlet-javascript>/js/bookCatalog.js</header-portlet-javascript>
 		<header-portlet-javascript>/js/dojo/dojo.js</header-portlet-javascript>
+		<header-portlet-javascript>/js/jquery-1.4.2.min.js</header-portlet-javascript>
 		<header-portlet-javascript>/dwr/engine.js</header-portlet-javascript>
 		<header-portlet-javascript>/dwr/util.js</header-portlet-javascript>
 		<header-portlet-javascript>/dwr/interface/MyAjaxBean.js</header-portlet-javascript>
