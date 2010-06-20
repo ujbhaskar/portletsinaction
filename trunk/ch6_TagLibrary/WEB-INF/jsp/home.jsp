@@ -4,7 +4,7 @@
 <portlet:defineObjects />
 <script type='text/javascript'>
   function <portlet:namespace/>confirmRemove() {
-    return confirm("Do you want to save Book information?");
+    return confirm("Do you want to remove the Book?");
   }
 </script>
 <div class="bookCatalogPortlet_ch6">
