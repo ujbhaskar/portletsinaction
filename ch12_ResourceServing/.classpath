@@ -12,7 +12,6 @@
 	<classpathentry kind="lib" path="WEB-INF/lib/commons-fileupload-1.2.1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/activation.jar"/>
-	<classpathentry kind="lib" path="C:/Apache/liferay-portal-5.2.3/tomcat-6.0.18/lib/catalina.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/dwr-3.0.M1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
