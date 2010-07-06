@@ -16,7 +16,12 @@ public class MyUrlGenerationListener implements PortletURLGenerationListener {
 	}
 
 	public void filterRenderURL(PortletURL renderUrl) {
-
+	    try {
+	        renderUrl.setWindowState(WindowState.MAXIMIZED);
+	     renderUrl.setSecure(true);
+	    } catch (Exception e) {
+			e.printStackTrace();
+	    }
 	}
 
 	public void filterResourceURL(ResourceURL arg0) {
