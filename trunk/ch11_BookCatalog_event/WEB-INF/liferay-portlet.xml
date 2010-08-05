@@ -5,6 +5,7 @@
 	<portlet>
 		<portlet-name>bookCatalog</portlet-name>
 		<instanceable>true</instanceable>
+		<remoteable>true</remoteable>
 		<header-portlet-css>/css/bookCatalog.css</header-portlet-css>
 		<header-portlet-javascript>/js/bookCatalog.js</header-portlet-javascript>
 	</portlet>
