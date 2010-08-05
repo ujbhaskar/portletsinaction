@@ -5,17 +5,21 @@
 	<portlet>
 		<portlet-name>myPortletWrappingController</portlet-name>
 		<instanceable>true</instanceable>
+		<remoteable>true</remoteable>
 	</portlet>
 	<portlet>
 		<portlet-name>myAbstractHelloWorldController</portlet-name>
 		<instanceable>true</instanceable>
+		<remoteable>true</remoteable>
 	</portlet>
 	<portlet>
 		<portlet-name>myPortletModeNameViewController</portlet-name>
 		<instanceable>true</instanceable>
+		<remoteable>true</remoteable>
 	</portlet>
 	<portlet>
 		<portlet-name>myParameterizableViewController</portlet-name>
 		<instanceable>true</instanceable>
+		<remoteable>true</remoteable>
 	</portlet>
 </liferay-portlet-app>

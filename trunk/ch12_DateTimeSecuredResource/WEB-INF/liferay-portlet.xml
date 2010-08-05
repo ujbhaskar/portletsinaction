@@ -5,6 +5,7 @@
 	<portlet>
 		<portlet-name>dateTimePortlet</portlet-name>
 		<instanceable>true</instanceable>
+		<remoteable>true</remoteable>
 	</portlet>
 	<role-mapper>
 		<role-name>portaluser</role-name>
