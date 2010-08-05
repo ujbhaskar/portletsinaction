@@ -5,6 +5,7 @@
 	<portlet>
 		<portlet-name>bookCatalogApp</portlet-name>
 		<instanceable>true</instanceable>
+		<remoteable>true</remoteable>
 		<header-portlet-css>/css/style.css</header-portlet-css>
 	</portlet>
 </liferay-portlet-app>

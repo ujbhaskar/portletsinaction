@@ -5,6 +5,7 @@
 	<portlet>
 		<portlet-name>bookCatalog</portlet-name>
 		<instanceable>true</instanceable>
+		<remoteable>true</remoteable>
 		<header-portlet-javascript>/js/bookCatalog.js</header-portlet-javascript>
 	</portlet>
 </liferay-portlet-app>
