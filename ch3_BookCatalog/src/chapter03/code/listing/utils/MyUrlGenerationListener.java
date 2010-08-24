@@ -10,6 +10,7 @@ public class MyUrlGenerationListener implements PortletURLGenerationListener {
 	public void filterActionURL(PortletURL actionUrl) {
 		try {
 			actionUrl.setWindowState(WindowState.MAXIMIZED);
+			//actionUrl.setSecure(true);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
