@@ -10,7 +10,7 @@ public class MyActionRequestWrapper extends ActionRequestWrapper {
 	}
 	public Object getAttribute(String attributeName) {
 		Object attribute;
-		if(attributeName != null && attributeName.equalsIgnoreCase("myaction")) {
+		if(attributeName != null && attributeName.equalsIgnoreCase("myparam")) {
 			attribute = getRequest().getParameter(attributeName);
 		} else {
 			attribute = getRequest().getAttribute(attributeName);
