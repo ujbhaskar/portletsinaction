@@ -15,6 +15,7 @@
 				<directory>WEB-INF</directory>
 				<includes>
 					<include>Language-ext.properties</include>
+					<include>Language-ext_fr_FR.properties</include>
 				</includes>
 			</resource>
 		</resources>
