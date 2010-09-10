@@ -344,6 +344,12 @@ public class BookCatalogPortlet extends GenericPortlet {
 							"exceptionMsg",
 							"Exception occurred while uploading the file. Please check the file size is <= 1MB");
 		}
+		finally {
+			// --close the output stream and delete the generated file
+			if (outStream != null) {
+				outStream.close();
+			}
+		}
 	}
 	
 	/**
