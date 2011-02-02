@@ -16,5 +16,6 @@
 	<classpathentry kind="lib" path="WEB-INF/lib/org.springframework.web.servlet-3.0.0.RC1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/org.springframework.web.portlet-3.0.0.RC1.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.7.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
