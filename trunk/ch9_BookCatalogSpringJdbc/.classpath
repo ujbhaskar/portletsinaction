@@ -21,5 +21,6 @@
 	<classpathentry kind="lib" path="WEB-INF/lib/aspectjweaver.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/org.springframework.aop-3.0.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/org.springframework.web.portlet-3.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.7.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
