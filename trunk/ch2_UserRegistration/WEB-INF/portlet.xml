@@ -18,9 +18,9 @@
 			<portlet-mode>HELP</portlet-mode>
 		</supports>
 		<resource-bundle>content.Language-ext</resource-bundle>
-	<container-runtime-option>
-		<name>javax.portlet.actionScopedRequestAttributes</name>
-		<value>true</value>
-	</container-runtime-option>
+		<container-runtime-option>
+			<name>javax.portlet.actionScopedRequestAttributes</name>
+			<value>true</value>
+		</container-runtime-option>
 	</portlet>
 </portlet-app>
