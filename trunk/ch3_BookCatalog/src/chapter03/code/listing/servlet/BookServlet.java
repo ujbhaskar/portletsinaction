@@ -96,7 +96,7 @@ public class BookServlet extends HttpServlet {
 			throws IOException, ServletException {
 		String myaction = (String) request.getAttribute("myaction");
 		logger
-				.info("Value of myaction recevied by BookServlet in doPost method "
+				.info("Value of myaction received by BookServlet in doPost method "
 						+ myaction);
 		BookService bookService = new BookServiceImpl(this
 				.getServletContext());
