@@ -175,7 +175,6 @@ public class BookCatalogPortlet extends GenericPortlet {
 	 * @throws IOException
 	 * @throws PortletException
 	 */
-	@SuppressWarnings("unchecked")
 	@RenderMode(name = "VIEW")
 	public void showBooks(RenderRequest request, RenderResponse response)
 			throws IOException, PortletException {
@@ -188,7 +187,8 @@ public class BookCatalogPortlet extends GenericPortlet {
 		printSupportedPortletModes(context);
 		printSupportedWindowStates(context);
 		
-		Map userAttributeMap = (Map) request
+		@SuppressWarnings("unchecked")
+		Map<String, Object> userAttributeMap = (Map<String, Object>) request
 				.getAttribute(PortletRequest.USER_INFO);
 		String firstName = "";
 		String lastName = "";
