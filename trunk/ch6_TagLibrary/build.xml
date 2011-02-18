@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- define the project -->
-<project name="ch6_BookCatalog" default="build" basedir=".">
+<project name="ch6_TagLibrary" default="build" basedir=".">
 
 	<!-- define project properties -->
 	<property name="compiler" value="modern" />
@@ -75,7 +75,7 @@
 	<!-- target to create the project WAR file -->
 	<target name="build" depends="clean,compile">
 		<mkdir dir="${build.dir}" />
-		<war destfile="${build.dir}/ch6_BookCatalog.war" webxml="${web.xml}">
+		<war destfile="${build.dir}/ch6_TagLibrary.war" webxml="${web.xml}">
 			<fileset refid="war.files" />
 		</war>
 		<copy todir="${liferay.portal.home}/deploy">
