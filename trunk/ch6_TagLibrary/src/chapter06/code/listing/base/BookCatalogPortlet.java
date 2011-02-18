@@ -17,6 +17,7 @@ import javax.portlet.PortalContext;
 import javax.portlet.PortletException;
 import javax.portlet.PortletMode;
 import javax.portlet.PortletRequest;
+import javax.portlet.PortletSession;
 import javax.portlet.ProcessAction;
 import javax.portlet.RenderMode;
 import javax.portlet.RenderRequest;
@@ -255,9 +256,9 @@ public class BookCatalogPortlet extends GenericPortlet {
 		}
 		if ("refreshResults".equalsIgnoreCase(myaction)) {
 			String bookNameSearchField = (String) request.getPortletSession()
-					.getAttribute("bookNameSearchField");
+					.getAttribute("bookNameSearchField", PortletSession.APPLICATION_SCOPE);
 			String authorNameSearchField = (String) request.getPortletSession()
-					.getAttribute("authorNameSearchField");
+					.getAttribute("authorNameSearchField", PortletSession.APPLICATION_SCOPE);
 			if (bookNameSearchField == null) {
 				bookNameSearchField = "";
 			}
@@ -400,9 +401,9 @@ public class BookCatalogPortlet extends GenericPortlet {
 				+ request.getParameter("authorNameSearchField"));
 		// --store the search criteria in session
 		request.getPortletSession().setAttribute("authorNameSearchField",
-				request.getParameter("authorNameSearchField"));
+				request.getParameter("authorNameSearchField"), PortletSession.APPLICATION_SCOPE);
 		request.getPortletSession().setAttribute("bookNameSearchField",
-				request.getParameter("bookNameSearchField"));
+				request.getParameter("bookNameSearchField"), PortletSession.APPLICATION_SCOPE);
 		// -- search books
 		List<Book> matchingBooks = null;
 		if (request.getParameter("bookNameSearchField") != null
