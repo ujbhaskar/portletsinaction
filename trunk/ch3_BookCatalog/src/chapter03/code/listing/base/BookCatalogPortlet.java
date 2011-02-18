@@ -197,7 +197,7 @@ public class BookCatalogPortlet extends GenericPortlet {
 		printSupportedPortletModes(context);
 		printSupportedWindowStates(context);
 		// --get user attributes user.name.given and user.name.family
-		Map userAttributeMap = (Map) request
+		Map<String, Object> userAttributeMap = (Map<String, Object>) request
 				.getAttribute(PortletRequest.USER_INFO);
 		String firstName = "";
 		String lastName = "";
@@ -420,7 +420,7 @@ public class BookCatalogPortlet extends GenericPortlet {
 				.getPortletContext().getRequestDispatcher(
 						response.encodeURL("/myservlet/bookServlet"));
 		dispatcher.include(request, response);
-		Map map = (Map) request.getAttribute("errors");
+		Map<String, String> map = (Map<String, String>) request.getAttribute("errors");
 		if (map != null && !map.isEmpty()) {
 			response.setRenderParameter("myaction", "addBookAction");
 		} else {
