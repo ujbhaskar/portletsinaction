@@ -37,7 +37,7 @@ public class BooksController extends AbstractController {
 	@SuppressWarnings("unchecked")
 	public ModelAndView handleRenderRequestInternal(RenderRequest request,
 			RenderResponse response) throws Exception {
-		Map modelMap = new ModelMap();
+		Map<String, Object> modelMap = new ModelMap();
 		List<Book> books = bookService.getBooks();
 		modelMap.put("books", books);
 		return  new ModelAndView("books", modelMap);
