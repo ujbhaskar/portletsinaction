@@ -118,12 +118,11 @@ public class ViewModeController implements Controller {
 		this.bookService = bookService;
 	}
 	
-	@SuppressWarnings("unchecked")
 	public ModelAndView handleRenderRequest(RenderRequest request,
 			RenderResponse response) throws Exception {
 		logger.info("Entering render request method");
 		ModelAndView modelAndView = null;
-		Map modelMap = new ModelMap();
+		Map<String, Object> modelMap = new ModelMap();
 		if(request.getParameter("myaction") == null) {
 			List<Book> books = bookService.getBooks();
 			modelMap.put("books", books);
