@@ -28,7 +28,7 @@ import chapter08.code.listing.utils.LongNumberEditor;
  * @author asarin
  *
  */
-@Controller
+@Controller(value="editBookController")
 @RequestMapping("VIEW")
 @SessionAttributes("book")
 public class EditBookController {
