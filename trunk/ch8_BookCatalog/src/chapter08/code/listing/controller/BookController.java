@@ -19,7 +19,7 @@ import chapter08.code.listing.service.BookService;
  * @author asarin
  *
  */
-@Controller("bookController")
+@Controller(value="bookController")
 @RequestMapping(value = "VIEW")
 public class BookController {
 
