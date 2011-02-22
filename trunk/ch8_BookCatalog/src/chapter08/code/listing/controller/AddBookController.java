@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,13 +23,13 @@ import chapter08.code.listing.service.BookService;
 import chapter08.code.listing.utils.LongNumberEditor;
 
 /**
- * AddBookController shows the add book form and handles requests
- * for adding a book to the catalog.
+ * AddBookController shows the add book form and handles requests for adding a
+ * book to the catalog.
  * 
  * @author asarin
- *
+ * 
  */
-@Controller(value="addBookController")
+@Controller(value = "addBookController")
 @RequestMapping(value = "VIEW")
 @SessionAttributes(types = Book.class)
 public class AddBookController {
@@ -55,17 +56,24 @@ public class AddBookController {
 		binder.registerCustomEditor(Long.class, new LongNumberEditor());
 	}
 
+	@ExceptionHandler({ Exception.class })
+	public String handleException() {
+		return "errorPage";
+	}
+
 	@ActionMapping(params = "myaction=addBook")
-	public void addBook(@Valid @ModelAttribute(value="book") Book book,
-			BindingResult bindingResult, ActionResponse response, SessionStatus sessionStatus) {
+	public void addBook(@Valid @ModelAttribute(value = "book") Book book,
+			BindingResult bindingResult, ActionResponse response,
+			SessionStatus sessionStatus) {
 		if (!bindingResult.hasErrors()) {
 			bookService.addBook(book);
 			response.setRenderParameter("myaction", "books");
-			//--set the session status as complete to cleanup the model attributes
-			//--stored using @SessionAttributes, otherwise when you click
-			//--'Add Book' button you'll see the book information pre-populated
-			//-- because the getCommandObject method of the controller is not
-			//--invoked
+			// --set the session status as complete to cleanup the model
+			// attributes
+			// --stored using @SessionAttributes, otherwise when you click
+			// --'Add Book' button you'll see the book information pre-populated
+			// -- because the getCommandObject method of the controller is not
+			// --invoked
 			sessionStatus.setComplete();
 		} else {
 			response.setRenderParameter("myaction", "addBookForm");
