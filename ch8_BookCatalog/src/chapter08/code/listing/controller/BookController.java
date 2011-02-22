@@ -7,6 +7,7 @@ import javax.portlet.RenderResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.portlet.bind.annotation.RenderMapping;
@@ -38,6 +39,11 @@ public class BookController {
 		return "home";
 	}
 
+	@ExceptionHandler({ Exception.class })
+	public String handleException() {
+		return "errorPage";
+	}
+	
 	// -- @ModelAttribute here works as the referenceData method
 	@ModelAttribute(value="books")
 	public List<Book> getBooks() {
