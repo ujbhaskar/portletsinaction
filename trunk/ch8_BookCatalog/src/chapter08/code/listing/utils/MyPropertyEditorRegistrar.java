@@ -12,7 +12,7 @@ import org.springframework.beans.PropertyEditorRegistry;
 public class MyPropertyEditorRegistrar implements PropertyEditorRegistrar {
 
 	public void registerCustomEditors(PropertyEditorRegistry registry) {
-		registry.registerCustomEditor(Long.class, new LongNumberEditor());
+		registry.registerCustomEditor(Long.class, new LongNumberPropertyEditor());
 	}
 
 }
