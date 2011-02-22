@@ -59,7 +59,7 @@ public class EditBookController {
 		}
 	}
 	
-	@InitBinder
+	@InitBinder("book")
 	public void initBinder(WebDataBinder binder) {
 		binder.registerCustomEditor(Long.class, new LongNumberEditor());
 		binder.setDisallowedFields(new String[] {"isbnNumber"});
