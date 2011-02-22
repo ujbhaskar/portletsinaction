@@ -56,7 +56,7 @@ public class AddBookController {
 	}
 
 	@ActionMapping(params = "myaction=addBook")
-	public void addBook(@Valid @ModelAttribute Book book,
+	public void addBook(@Valid @ModelAttribute(value="book") Book book,
 			BindingResult bindingResult, ActionResponse response, SessionStatus sessionStatus) {
 		if (!bindingResult.hasErrors()) {
 			bookService.addBook(book);
