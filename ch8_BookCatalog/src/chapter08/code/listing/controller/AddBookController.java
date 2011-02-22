@@ -20,7 +20,7 @@ import org.springframework.web.portlet.bind.annotation.RenderMapping;
 
 import chapter08.code.listing.domain.Book;
 import chapter08.code.listing.service.BookService;
-import chapter08.code.listing.utils.LongNumberEditor;
+import chapter08.code.listing.utils.LongNumberPropertyEditor;
 
 /**
  * AddBookController shows the add book form and handles requests for adding a
@@ -53,7 +53,7 @@ public class AddBookController {
 
 	@InitBinder("book")
 	public void initBinder(WebDataBinder binder) {
-		binder.registerCustomEditor(Long.class, new LongNumberEditor());
+		binder.registerCustomEditor(Long.class, new LongNumberPropertyEditor());
 	}
 
 	@ExceptionHandler({ Exception.class })
