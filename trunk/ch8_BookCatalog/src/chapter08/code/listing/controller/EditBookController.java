@@ -29,8 +29,8 @@ import chapter08.code.listing.utils.LongNumberEditor;
  *
  */
 @Controller(value="editBookController")
-@RequestMapping("VIEW")
-@SessionAttributes("book")
+@RequestMapping(value="VIEW")
+@SessionAttributes(value="book")
 public class EditBookController {
 	@Autowired
 	@Qualifier("myBookService")
