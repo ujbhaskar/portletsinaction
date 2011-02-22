@@ -39,7 +39,7 @@ public class BookController {
 	}
 
 	// -- @ModelAttribute here works as the referenceData method
-	@ModelAttribute("books")
+	@ModelAttribute(value="books")
 	public List<Book> getBooks() {
 		return bookService.getBooks();
 	}
