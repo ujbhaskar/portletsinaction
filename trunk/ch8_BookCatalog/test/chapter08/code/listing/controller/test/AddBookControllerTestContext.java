@@ -36,7 +36,7 @@ import chapter08.code.listing.service.BookService;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations="classpath:bookCatalogTest-portlet.xml")
-@TestExecutionListeners(value = { DependencyInjectionTestExecutionListener.class }, inheritListeners = false)
+@TestExecutionListeners(value = { DependencyInjectionTestExecutionListener.class })
 public class AddBookControllerTestContext extends AbstractJUnit4SpringContextTests{
 	@Autowired
 	@Qualifier("addBookController")
