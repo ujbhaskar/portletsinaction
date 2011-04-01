@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
+@Entity(name="Book")
 @Table(name="book_tbl")
 public class Book extends AuditFields {
 	@Id
