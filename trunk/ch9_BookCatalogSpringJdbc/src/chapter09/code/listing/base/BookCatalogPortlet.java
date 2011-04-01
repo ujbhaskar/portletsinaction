@@ -188,7 +188,7 @@ public class BookCatalogPortlet extends GenericPortlet {
 		printSupportedPortletModes(context);
 		printSupportedWindowStates(context);
 		
-		Map userAttributeMap = (Map) request
+		Map<String, Object> userAttributeMap = (Map<String, Object>) request
 				.getAttribute(PortletRequest.USER_INFO);
 		String firstName = "";
 		String lastName = "";
