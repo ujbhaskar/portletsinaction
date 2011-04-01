@@ -15,7 +15,7 @@ public class HibernateBookDao implements BookDao {
 	
 	@SuppressWarnings("unchecked")
 	public List<Book> getBooks() {
-		return sessionFactory.getCurrentSession().createQuery("from Book as book where book.active=1").list();
+		return sessionFactory.getCurrentSession().createQuery("from MyBook as book where book.active=1").list();
 	}
 
 	public List<Book> searchBooks(String bookName, String authorName) {
@@ -28,12 +28,12 @@ public class HibernateBookDao implements BookDao {
 	}
 
 	public Book getBook(Long id) {
-		String hql = "from Book as book where book.active=1 and id=" + id;
+		String hql = "from MyBook as book where book.active=1 and id=" + id;
 		return (Book) sessionFactory.getCurrentSession().createQuery(hql).uniqueResult();
 	}
 
 	public boolean isUniqueISBN(Long isbnNumber) {
-		String hql = "from Book as book where book.active=1 and book.isbnNumber=" + isbnNumber;
+		String hql = "from MyBook as book where book.active=1 and book.isbnNumber=" + isbnNumber;
 		Book book = (Book)sessionFactory.getCurrentSession().createQuery(hql).uniqueResult();
 		if(book == null) {
 			return true;
@@ -43,7 +43,7 @@ public class HibernateBookDao implements BookDao {
 	}
 
 	public void removeBook(Long book_id) {
-		String hql = "from Book as book where book.id=" + book_id;
+		String hql = "from MyBook as book where book.id=" + book_id;
 		Book book = (Book)sessionFactory.getCurrentSession().createQuery(hql).uniqueResult();
 		if(book != null) {
 			book.setActive(0);
