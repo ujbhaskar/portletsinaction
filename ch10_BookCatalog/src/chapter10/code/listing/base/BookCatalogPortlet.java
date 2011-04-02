@@ -519,7 +519,7 @@ public class BookCatalogPortlet extends GenericPortlet {
 	 * @throws IOException
 	 */
 	@ProcessAction(name = "searchBookAction")
-	public void searchBook(ActionRequest request, ActionResponse response)
+	public void searchBooks(ActionRequest request, ActionResponse response)
 			throws PortletException, IOException {
 		logger.info("Inside search Book action");
 		logger.info("Searching for books with name : "
