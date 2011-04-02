@@ -198,7 +198,7 @@ public class BookCatalogPortlet extends GenericPortlet {
 		// --these attributes must be defined in the portlet.xml file to
 		// --allow portlet container/server to make them available to the
 		// --portlet
-		Map userAttributeMap = (Map) request
+		Map<String, Object> userAttributeMap = (Map<String, Object>) request
 				.getAttribute(PortletRequest.USER_INFO);
 		String firstName = "";
 		String lastName = "";
