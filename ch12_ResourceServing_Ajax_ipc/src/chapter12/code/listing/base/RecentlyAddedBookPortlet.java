@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import javax.portlet.GenericPortlet;
 import javax.portlet.PortletException;
-import javax.portlet.PortletSession;
 import javax.portlet.RenderMode;
 import javax.portlet.RenderRequest;
 import javax.portlet.RenderResponse;
