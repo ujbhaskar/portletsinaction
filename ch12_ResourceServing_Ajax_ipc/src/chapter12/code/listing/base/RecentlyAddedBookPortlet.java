@@ -22,12 +22,12 @@ public class RecentlyAddedBookPortlet extends GenericPortlet {
 	
 	protected void doHeaders(RenderRequest request, RenderResponse response) {
 		super.doHeaders(request, response);
-		getPortletContext().setAttribute("recentlyAddedBookPortletNamespace", response.getNamespace());
 	}
 	
 	@RenderMode(name = "VIEW")
 	public void showRecentlyAddedBook(RenderRequest request, RenderResponse response)
 			throws IOException, PortletException {
+		getPortletContext().setAttribute("recentlyAddedBookPortletNamespace", response.getNamespace());
 		getPortletContext().getRequestDispatcher(
 				response.encodeURL(Constants.PATH_TO_JSP_PAGE
 						+ "recentPortletHome.jsp")).include(request, response);
