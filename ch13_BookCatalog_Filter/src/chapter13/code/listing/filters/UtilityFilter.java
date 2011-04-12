@@ -33,7 +33,7 @@ public class UtilityFilter implements ActionFilter, RenderFilter {
 		String actionName = request.getParameter(ActionRequest.ACTION_NAME);
 		if (actionName == null || "".equals(actionName)) {
 			sb
-					.append("WARNING: Action request doesn't contain 'javax.portlet.action' parameter. Are you using annotations ?");
+					.append("WARNING: Action request doesn't contain javax.portlet.action parameter. Are you using annotations ?");
 		}
 		request.setAttribute("warningMsg", sb.toString());
 		logger.info("UtilityFilter - Pre-processing complete");
