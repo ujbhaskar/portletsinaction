@@ -31,4 +31,30 @@
 			<title>Book Catalog(PortletModeParameterHandlerMapping example)</title>
 		</portlet-info>
 	</portlet>	
+	<portlet>
+		<portlet-name>parameterHandlerMappingExample</portlet-name>
+		<portlet-class>org.springframework.web.portlet.DispatcherPortlet</portlet-class>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<resource-bundle>content.Language-ext</resource-bundle>
+		<portlet-info>
+			<title>Book Catalog(ParameterHandlerMapping example)</title>
+		</portlet-info>
+	</portlet>	
+	<portlet>
+		<portlet-name>handlerMappingChainExample</portlet-name>
+		<portlet-class>org.springframework.web.portlet.DispatcherPortlet</portlet-class>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>edit</portlet-mode>
+			<portlet-mode>help</portlet-mode>
+		</supports>
+		<resource-bundle>content.Language-ext</resource-bundle>
+		<portlet-info>
+			<title>Book Catalog(HandlerMapping chain example)</title>
+		</portlet-info>
+	</portlet>	
 </portlet-app>
