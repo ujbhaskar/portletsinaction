@@ -4,5 +4,7 @@
  	<category name="category.chapter07.handlerMapping">
  		<portlet id="portletModeHandlerMappingExample" />
  		<portlet id="portletModeParameterHandlerMappingExample" />
+ 		<portlet id="parameterHandlerMappingExample" />
+ 		<portlet id="handlerMappingChainExample" />
  	</category>
  </display>
