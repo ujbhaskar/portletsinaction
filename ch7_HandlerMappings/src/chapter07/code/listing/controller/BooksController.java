@@ -34,7 +34,6 @@ public class BooksController extends AbstractController {
 		// -- controller, this method has not been implemented
 	}
 
-	@SuppressWarnings("unchecked")
 	public ModelAndView handleRenderRequestInternal(RenderRequest request,
 			RenderResponse response) throws Exception {
 		Map<String, Object> modelMap = new ModelMap();
