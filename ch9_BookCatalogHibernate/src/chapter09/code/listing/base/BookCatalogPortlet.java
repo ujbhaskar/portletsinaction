@@ -415,6 +415,7 @@ public class BookCatalogPortlet extends GenericPortlet {
 	 * @throws PortletException
 	 * @throws IOException
 	 */
+	@SuppressWarnings("unchecked")
 	@ProcessAction(name = "addBookAction")
 	public void addBook(ActionRequest request, ActionResponse response)
 			throws PortletException, IOException {
@@ -446,8 +447,10 @@ public class BookCatalogPortlet extends GenericPortlet {
 		if (errorMap.isEmpty()) {
 			logger.info("adding book to the data store");
 			try {
-			bookService.addBook(new Book(name, author, Long
-					.valueOf(isbnNumber)), request.getRemoteUser());
+				Map<String, Object> userAttributeMap = (Map<String, Object>) request
+				.getAttribute(PortletRequest.USER_INFO);
+				bookService.addBook(new Book(name, author, Long
+					.valueOf(isbnNumber)), (String)userAttributeMap.get("user.login.id"));
 			} catch(Exception ex) {
 				response.setRenderParameter(Constants.MYACTION_PARAM, "error");
 				response
