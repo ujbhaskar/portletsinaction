@@ -10,7 +10,7 @@
 </table>
 <table>
 	<tr>
-		<td><b>Book URL:</b><font style="color: #C11B17;"></font></td>
+		<td><b>E-book URL:</b><font style="color: #C11B17;"></font></td>
 		<td colspan="2"><input type="text" name="tocDownloadUrl" /></td>
 	</tr>
 	<tr align="center">
