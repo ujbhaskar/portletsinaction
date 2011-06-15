@@ -68,7 +68,7 @@
 			<td valign="top"><b><fmt:message key="label.name" /></b></td>
 			<td valign="top"><b><fmt:message key="label.author" /></b></td>
 			<td valign="top"><b><fmt:message key="label.isbnNumber" /></b></td>
-			<td valign="top"><b><fmt:message key="label.toc" /></b></td>
+			<td valign="top"><b><fmt:message key="label.e-book" /></b></td>
 			<td valign="top"><b><fmt:message key="label.action" /></b></td>
 		</tr>
 		<c:forEach var="book" items="${books}">
