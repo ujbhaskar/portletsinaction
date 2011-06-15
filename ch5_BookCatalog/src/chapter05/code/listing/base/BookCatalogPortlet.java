@@ -164,7 +164,7 @@ public class BookCatalogPortlet extends GenericPortlet {
 		if (!request.isUserInRole("administrator")) {
 			response.setRenderParameter("myaction", "error");
 			response.setRenderParameter("exceptionMsg",
-					"You are not authorized for this action. You must have the role of Organization Administrator.");
+					"You are not authorized for this action. You must have Administrator role.");
 			return;
 		}
 		request.setAttribute("myaction", "removeBookAction");
@@ -182,7 +182,7 @@ public class BookCatalogPortlet extends GenericPortlet {
 		if (!request.isUserInRole("administrator")) {
 			response.setRenderParameter("myaction", "error");
 			response.setRenderParameter("exceptionMsg",
-					"You are not authorized for this action. You must have the role of Organization Administrator.");
+					"You are not authorized for this action. You must have Administrator role.");
 			return;
 		}
 
@@ -254,7 +254,7 @@ public class BookCatalogPortlet extends GenericPortlet {
 		if (!request.isUserInRole("administrator")) {
 			response.setRenderParameter("myaction", "error");
 			response.setRenderParameter("exceptionMsg",
-					"You are not authorized for this action. You must have the role of Organization Administrator.");
+					"You are not authorized for this action. You must have Administrator role.");
 			return;
 		}
 		request.setAttribute("myaction", "addBookAction");
