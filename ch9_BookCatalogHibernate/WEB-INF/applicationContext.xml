@@ -33,7 +33,6 @@
 			<list>
 				<value>chapter09.code.listing.domain.ToC</value>
 				<value>chapter09.code.listing.domain.Book</value>
-				<value>chapter09.code.listing.domain.AuditFields</value>
 			</list>
 		</property>
 	</bean>
