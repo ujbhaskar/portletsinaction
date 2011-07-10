@@ -63,7 +63,7 @@
 		</td>
 		<td>
 			<a href='<portlet:actionURL name="resetPreference">
-				<portlet:param name="prefName" value="maxNumber"/>
+				<portlet:param name="prefName" value="maxNumOfBooks"/>
 			</portlet:actionURL>
 			'><b>Reset</b></a>
 		</td>
