@@ -9,7 +9,7 @@
 				messageText.innerHTML = xhr.responseText;
 			}
 		};
-		var url = "<%=request.getContextPath() %>/DateTimeServlet" + "?fakeId=" + Math.random();
+		var url = "<%=request.getContextPath() %>/DateTimeServlet" + "?fakeId=" + Date.parse(new Date());
 		xhr.open("GET", url, true);
 		xhr.send();
 	}
