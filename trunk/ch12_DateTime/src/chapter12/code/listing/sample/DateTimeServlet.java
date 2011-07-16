@@ -23,7 +23,7 @@ public class DateTimeServlet extends HttpServlet {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd-MMM-yyyy hh:mm:ss a");
 		OutputStream outStream = response.getOutputStream();
 		StringBuffer buffer = new StringBuffer();
-		buffer.append("Hello World (<i> " + sdf.format(new Date()) + " </i>)");
+		buffer.append("<p>Hello World (<i> " + sdf.format(new Date()) + " </i>)</p>");
 		outStream.write(buffer.toString().getBytes());
 	}
 }
